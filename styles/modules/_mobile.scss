@@ -8,7 +8,7 @@
   }
 
   & .logo {
-    background-image: url(/images/common/riv-logo-pr2.png);
+    background-image: url(../images/common/riv-logo-pr2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     opacity: 1;
 
     &.inview {
-      background-image: url(/images/common/riv-logo-pr2.png);
+      background-image: url(../images/common/riv-logo-pr2.png);
     }
   }
 
@@ -28,14 +28,14 @@
     z-index: 3000;
   }
 
-  @media (max-width:600px) {
+  @media (max-width: 600px) {
     .pc-container {
       display: none;
     }
   }
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
   .pc-container {
     position: fixed;
     top: 0;
@@ -136,7 +136,7 @@
           left: 0;
           right: 0;
           margin: auto;
-          content: '';
+          content: "";
           display: block;
           height: 22px;
           width: 22px;
@@ -148,7 +148,7 @@
           position: absolute;
           top: 50%;
           right: -8px;
-          content: '';
+          content: "";
           height: 1px;
           width: 20px;
           display: block;
@@ -159,19 +159,19 @@
 
       & .tel {
         &::before {
-          background-image: url(/images/common/tel-white.png);
+          background-image: url(../images/common/tel-white.png);
         }
       }
 
       & .mail {
         &::before {
-          background-image: url(/images/common/ico-mail-wh.png);
+          background-image: url(../images/common/ico-mail-wh.png);
         }
       }
 
       & .insta {
         &::before {
-          background-image: url(/images/common/icon-insta-white.png);
+          background-image: url(../images/common/icon-insta-white.png);
         }
       }
     }
@@ -196,7 +196,7 @@
     right: 20%;
     height: 20px;
     width: 20px;
-    background-image: url(/images/tel-gray.png);
+    background-image: url(../images/tel-gray.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -204,7 +204,7 @@
 
     &.inview {
       transition: all 0.3s;
-      background-image: url(/images/tel-white.png);
+      background-image: url(../images/tel-white.png);
     }
 
     & a {
@@ -220,7 +220,7 @@
     left: 5%;
     height: 43px;
     width: 138px;
-    background-image: url(/images/riv_logo-gray.png);
+    background-image: url(../images/riv_logo-gray.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -228,10 +228,9 @@
 
     &.inview {
       transition: all 0.3s;
-      background-image: url(/images/riv_logo-white.png);
+      background-image: url(../images/riv_logo-white.png);
     }
   }
-
 
   .mobile-button {
     position: fixed;
@@ -248,12 +247,12 @@
     display: block;
 
     &.inview {
-      &>span {
+      & > span {
         background-color: #fff;
       }
     }
 
-    &>span {
+    & > span {
       background-color: black;
       width: 25px;
       height: 1px;
@@ -267,7 +266,7 @@
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       & span {
         width: 35px;
         margin-bottom: 9px;
@@ -302,7 +301,7 @@
   }
 
   .mobile-menu__btn {
-    &>span {
+    & > span {
       background-color: $cBlack !important;
 
       &:nth-child(1) {

@@ -2,16 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>士業テンプレート4 | ホーム</title>
-  <link rel="stylesheet" href="styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="/styles/vendor/logo-animation.min.css">
-  <link rel="stylesheet" href="styles/vendor/swiper.min.css">
-  <link rel="stylesheet" href="styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="styles/style.css">
-
+<?php get_header(); ?>
 </head>
 
 <body>
@@ -85,7 +76,7 @@
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class=" logo__img">
-          <a href="/">
+          <a href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -100,30 +91,30 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo-pc logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/company/company.html"><span>事務所案内</span>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>"><span>事務所案内</span>
                 <small>Office</small></a>
             </li>
             <li class="pc-nav-item">
               <a class="pc-nav-link animsition-link"
-                href="/business/business.html"><span>取扱業務</span><small>business</small></a>
+                href=" <?php echo esc_url( home_url('/business')); ?>"><span>取扱業務</span><small>business</small></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/price/price.html"><span>料金体系
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/price')); ?>"><span>料金体系
                 </span><small>Price</small></a>
             </li>
             <li class="pc-nav-item">
               <a class="pc-nav-link animsition-link"
-                href="/recruit/recruit.html"><span>採用情報</span><small>Recruit</small></a>
+                href=" <?php echo esc_url( home_url('/')); ?>"><span>採用情報</span><small>Recruit</small></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span><small>News</small></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span><small>News</small></a>
             </li>
           </ul>
         </nav>
@@ -156,16 +147,16 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="hero-img view-sp" src="/images/top/top-image-sp-1.jpeg" />
-                <img class="hero-img view-pc" src="/images/top/top-image-1.jpeg" />
+                <img class="hero-img view-sp" src="<?php echo get_template_directory_uri(); ?>/images/top/top-image-sp-1.jpeg" />
+                <img class="hero-img view-pc" src="<?php echo get_template_directory_uri(); ?>/images/top/top-image-1.jpeg" />
               </div>
               <div class="swiper-slide">
-                <img class="hero-img view-sp" src="/images/top/top-image-sp-2.jpeg" />
-                <img class="hero-img view-pc" src="/images/top/top-image-2.jpeg" />
+                <img class="hero-img view-sp" src="<?php echo get_template_directory_uri(); ?>/images/top/top-image-sp-2.jpeg" />
+                <img class="hero-img view-pc" src="<?php echo get_template_directory_uri(); ?>/images/top/top-image-2.jpeg" />
               </div>
               <div class="swiper-slide">
-                <img class="hero-img view-sp" src="/images/top/top-image-sp-3.jpeg" />
-                <img class="hero-img view-pc" src="/images/top/top-image-3.jpeg" />
+                <img class="hero-img view-sp" src="<?php echo get_template_directory_uri(); ?>/images/top/top-image-sp-3.jpeg" />
+                <img class="hero-img view-pc" src="<?php echo get_template_directory_uri(); ?>/images/top/top-image-3.jpeg" />
               </div>
             </div>
           </div>
@@ -187,8 +178,8 @@
           <div class="p-about__container">
             <div class="p-about__img">
               <ul>
-                <li><img class="parallax-img" src="/images/top/values.jpg" alt=""></li>
-                <li><img class="parallax-img" src="/images/top/office.jpg" alt=""></li>
+                <li><img class="parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/top/values.jpg" alt=""></li>
+                <li><img class="parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/top/office.jpg" alt=""></li>
               </ul>
             </div>
             <div class="p-about__txt appear up">
@@ -201,7 +192,7 @@
                 </p>
               </div>
               <div class="more-btn item">
-                <a href="/company/company.html" class="more-btn__link slide-bg animsition-link">
+                <a href=" <?php echo esc_url( home_url('/company')); ?>" class="more-btn__link slide-bg animsition-link">
                   <span class="c-txt-sm">more</span>
                   <span class="bg"></span></a>
               </div>
@@ -223,40 +214,40 @@
           <div class="p-services__wrap">
             <div class="p-services__img">
               <a href="/business/business.html#services01">
-                <img src="/images/service/service-1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-1.jpg" alt="">
                 <span>不動産登記</span>
               </a>
               <a href="/business/business.html#services02">
-                <img src="/images/service/service-2.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-2.jpg" alt="">
                 <span>商業登記</span>
               </a>
               <a href="/business/business.html#services03">
-                <img src="/images/service/service-3.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-3.jpg" alt="">
                 <span>相続</span>
               </a>
               <a href="/business/business.html#services04">
-                <img src="/images/service/service-4.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-4.jpg" alt="">
                 <span>贈与</span>
               </a>
               <a href="/business/business.html#services05">
-                <img src="/images/service/service-5.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-5.jpg" alt="">
                 <span>債権譲渡登記</span>
               </a>
               <a href="/business/business.html#services06">
-                <img src="/images/service/service-6.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-6.jpg" alt="">
                 <span>信託登記</span>
               </a>
               <a href="/business/business.html#services07">
-                <img src="/images/service/service-7.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-7.jpg" alt="">
                 <span>契約書作成</span>
               </a>
               <a href="/business/business.html#services08">
-                <img src="/images/service/service-8.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-8.jpg" alt="">
                 <span>その他法務</span>
               </a>
             </div>
             <div class="more-btn">
-              <a href="/business/business.html" class="more-btn__link slide-bg animsition-link">
+              <a href=" <?php echo esc_url( home_url('/business')); ?>" class="more-btn__link slide-bg animsition-link">
                 <span class="c-txt-sm">more</span>
                 <span class="bg"></span></a>
             </div>
@@ -271,7 +262,7 @@
             <span class="ja">料金</span>
           </h2>
           <div class="p-price__img">
-            <img src="/images/top/price.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/price.jpg" alt="">
           </div>
           <div class="p-price__desc">
             <p class="c-txt-sm">
@@ -279,7 +270,7 @@
             </p>
           </div>
           <div class="more-btn">
-            <a href="/price/price.html" class="more-btn__link slide-bg animsition-link">
+            <a href=" <?php echo esc_url( home_url('/price')); ?>" class="more-btn__link slide-bg animsition-link">
               <span class="c-txt-sm">料金詳細へ</span>
               <span class="bg"></span></a>
           </div>
@@ -300,12 +291,12 @@
                 </p>
               </div>
               <div class="readmore item">
-                <a class="animsition-link" href="/recruit/recruit.html">
+                <a class="animsition-link" href="/ <?php echo esc_url( home_url('/recruit')); ?>">
                   <span>採用情報を見る</span></a>
               </div>
             </div>
             <div class="p-recruit__img cover-slide">
-              <img class="img-zoom" src="/images/top/recruit.jpg" alt="">
+              <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/top/recruit.jpg" alt="">
             </div>
           </div>
         </div>
@@ -318,27 +309,19 @@
             <span class="ja">お知らせ</span>
           </h2>
           <ul class="p-news__list item">
-            <li class="p-news__item">
-              <a class="animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2020.9.8</span>
-                <p class="p-news__content">サイトリニューアルのお知らせ</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2020.9.8</span>
-                <p class="p-news__content">サイトリニューアルのお知らせ</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2020.9.8</span>
-                <p class="p-news__content">サイトリニューアルのお知らせ</p>
-              </a>
-            </li>
+            <?php query_posts('posts_per_page=3'); ?>
+            <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+              <li class="p-news__item">
+                <a class="animsition-link" href="<?php the_permalink() ;?>">
+                  <span class="p-news__date"><?php echo get_the_date(); ?></span>
+                  <p class="p-news__content"><?php the_title(); ?></p>
+                </a>
+              </li>
+            <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
           <div class="readmore item">
-            <a class="animsition-link" href="/news/news.html">
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">
               <span>お知らせ一覧</span></a>
           </div>
         </div>
@@ -357,7 +340,7 @@
             <a href="tel:050-3786-1317">Tel:050-3786-1317</a>
           </div>
           <div class="p-contact__form item">
-            <a class="link-btn" href="/contact/contact.html">
+            <a class="link-btn" href=" <?php echo esc_url( home_url('/company')); ?>">
               <span class="c-txt-md">お問い合わせフォーム</span></a>
           </div>
         </div>
@@ -365,104 +348,12 @@
       <!-- /.p-contact -->
     </main>
     <!-- /#main-contents -->
-    <footer class="p-footer">
-      <div class="c-container">
-        <div class="p-footer__wrap">
-          <div class="p-footer__logo">
-            <img src="/images/common/riv-logo-pr2.png" alt="">
-          </div>
-          <div class="p-footer__nav">
-            <ul>
-              <li>
-                <a class="animsition-link" href="/"><span class="c-txt-sm">ホーム</span>
-                  <span class="c-txt-xs">Home</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/company/company.html"><span class="c-txt-sm">事務所案内</span>
-                  <span class="c-txt-xs">Office</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/business/business.html"><span class="c-txt-sm">取扱業務</span>
-                  <span class="c-txt-xs">business</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/price/price.html"><span class="c-txt-sm">料金体系</span>
-                  <span class="c-txt-xs">Price</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruit/recruit.html"><span class="c-txt-sm">採用情報</span>
-                  <span class="c-txt-xs">Recruit</span></a>
-              </li>
-              <li>
-                <a href="/news/news.html"><span class="animsition-link c-txt-sm">お知らせ</span>
-                  <span class="c-txt-xs">News</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="p-footer__address">
-            <div class="address">
-              <p class="c-txt-sm">住所</p>
-              <span class="c-txt-sm">〒812-0011<br>福岡県福岡市博多区3-27-25-9F</span>
-            </div>
-            <div class="info">
-              <a href="tel:050-3786-1317"><span class="c-txt-sm">Tel : 050-3786-1317</span></a>
-            </div>
-            <div class="info"><span class="c-txt-sm">営業時間 : 9:00~18:00</span>
-            </div>
-            <div class="info"><span class="c-txt-sm">定休日 : 土曜日・日曜・祝日</span>
-            </div>
-          </div>
-        </div>
-        <div class="copyright">&copy;2021 Riv建設</div>
-      </div>
-    </footer>
+    <?php get_template_part('includes/c-footer'); ?>      
     <!-- /.footer -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="animsition-link" href="/">ホーム</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/company/company.html">事務所案内</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/business/business.html">取扱業務</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/price/price.html">料金体系</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
-        </ul>
-        <div class="contact-btn">
-          <ul class="contact-btn-list">
-            <li class="contact-btn-item">
-              <a href="tel:05031599527">
-                <span class="tel">お問い合わせ</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a href="mailto:info@riv-round.com">
-                <span class="mail">お問い合わせ</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a href="https://www.instagram.com/?hl=ja" target="_blank">
-                <span class="insta">インスタグラム</span>
-              </a>
-            </li>
-        </div>
-        </ul>
-      </nav>
-    </div>
+    <?php get_template_part('includes/c-header'); ?>     
     <!-- /.mobile-menu -->
   </div>
-  <script src="/scripts/vendor/pace.js"></script>
-  <script src="/scripts/vendor/swiper.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="/scripts/libs/hero-slider.js"></script>
-  <script src="/scripts/vendor/simpleParallax.min.js"></script>
-  <script src="/scripts/libs/parallax.js"></script>
-  <script src="/scripts/libs/text-animation.js"></script>
-  <script src="/scripts/libs/mobile-menu.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
-  <script src="/scripts/main.js"></script>
+  <?php get_footer(); ?>
 </body>
 
 </html>

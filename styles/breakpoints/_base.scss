@@ -6,8 +6,8 @@ Stylesheet: ベーススタイル
 
 body {
   color: $cBlack;
-  font-family: 'Cormorant Infant', serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Cormorant Infant", serif;
+  font-family: "Noto Serif JP", serif;
   letter-spacing: 1px;
 }
 
@@ -33,18 +33,18 @@ body.hidden {
       position: absolute;
       top: 6px;
       right: 0;
-      content: '';
+      content: "";
       display: inline-block;
       height: 12px;
       width: 12px;
-      background-image: url(/images/common/arrow.png);
+      background-image: url(../images/common/arrow.png);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
     }
   }
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     & span {
       font-size: 20px;
       padding-right: 25px;
@@ -62,7 +62,7 @@ body.hidden {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -75,7 +75,7 @@ body.hidden {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -87,16 +87,15 @@ body.hidden {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
-    background-image: url(/images/common/icon-map.png);
+    background-image: url(../images/common/icon-map.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 17px;
     width: 17px;
   }
-
 }
 
 .icon-insta {
@@ -107,11 +106,11 @@ body.hidden {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/images/common/icon-insta-gr.png);
+    background-image: url(../images/common/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -130,7 +129,7 @@ body.hidden {
     height: 30vh;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       height: 100%;
       width: 100%;
@@ -159,13 +158,13 @@ body.hidden {
     }
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     .view-pc {
       display: none;
     }
   }
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     .view-sp {
       display: none;
     }
@@ -185,7 +184,7 @@ body.hidden {
       position: absolute;
       left: -10px;
       bottom: 0;
-      content: '';
+      content: "";
       width: 50px;
       height: 50px;
       z-index: -1;
@@ -197,7 +196,7 @@ body.hidden {
       position: absolute;
       top: 50%;
       right: 0;
-      content: '';
+      content: "";
       display: inline-block;
       width: 45px;
       height: 1px;
@@ -233,7 +232,7 @@ body.hidden {
       position: absolute;
       left: -10px;
       bottom: 0;
-      content: '';
+      content: "";
       width: 30px;
       height: 30px;
       z-index: -1;
@@ -274,7 +273,7 @@ body.hidden {
   display: inline-block;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 50%;
@@ -282,7 +281,7 @@ body.hidden {
     width: 40px;
     height: 1px;
     background-color: $cOrange;
-    transition: .3s;
+    transition: 0.3s;
     z-index: 100;
   }
 
@@ -318,7 +317,6 @@ body.hidden {
       }
 
       &:hover {
-
         & span {
           color: $cBlack;
           transform: none;
@@ -348,7 +346,7 @@ body.hidden {
   }
 }
 
-//* * * * * * ホーム * * * * * * * 
+//* * * * * * ホーム * * * * * * *
 //.topview
 .top-view {
   position: relative;
@@ -373,7 +371,7 @@ body.hidden {
         position: absolute;
         left: -10px;
         bottom: 0;
-        content: '';
+        content: "";
         width: 50px;
         height: 50px;
         z-index: -1;
@@ -385,7 +383,7 @@ body.hidden {
         position: absolute;
         left: 175px;
         bottom: 155px;
-        content: '';
+        content: "";
         width: 130px;
         height: 50px;
         z-index: -1;
@@ -399,13 +397,13 @@ body.hidden {
       }
     }
 
-    @media (max-width:599px) {
+    @media (max-width: 599px) {
       .view-pc {
         display: none;
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       .view-sp {
         display: none;
       }
@@ -470,12 +468,12 @@ body.hidden {
         position: absolute;
         top: 0;
         left: 0;
-        content: '';
+        content: "";
         display: block;
         height: 100%;
         width: 100%;
         background-color: $cBlack;
-        opacity: .4;
+        opacity: 0.4;
       }
     }
   }
@@ -490,18 +488,16 @@ body.hidden {
   }
 }
 
-//.p-price 
+//.p-price
 .p-price {
   @extend .mb-lr;
 
   &__img {
     @extend .mb-sm;
-
   }
 
   &__desc {
     @extend .mb-sm;
-
   }
 }
 
@@ -565,7 +561,6 @@ body.hidden {
 
 //.p-contact
 .p-contact {
-
   & .p-title {
     color: $cWhite;
     margin-bottom: 30px;
@@ -591,12 +586,12 @@ body.hidden {
   &__wrap {
     position: relative;
     padding: 30px 5vw;
-    background-image: url(/images/top/reagle-sp.jpg);
+    background-image: url(../images/top/reagle-sp.jpg);
     background-size: cover;
     text-align: center;
 
-    @media (min-width:600px) {
-      background-image: url(/images/top/reagle-pc.jpg);
+    @media (min-width: 600px) {
+      background-image: url(../images/top/reagle-pc.jpg);
     }
   }
 
@@ -623,49 +618,48 @@ body.hidden {
     z-index: 10;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -2px;
       right: -8px;
       width: 48px;
       height: 1px;
       background-color: $cOrange;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: -8px;
       right: -2px;
       width: 1px;
       height: 48px;
       background-color: $cOrange;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     & span {
-
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -2px;
         left: -8px;
         width: 48px;
         height: 1px;
         background-color: $cOrange;
-        transition: all .2s ease-out;
+        transition: all 0.2s ease-out;
       }
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -8px;
         left: -2px;
         width: 1px;
         height: 48px;
         background-color: $cOrange;
-        transition: all .2s ease-out;
+        transition: all 0.2s ease-out;
       }
     }
 
@@ -677,36 +671,36 @@ body.hidden {
       &::before {
         width: 88px;
         background-color: $cBlue;
-        transition: all .2s ease-out;
+        transition: all 0.2s ease-out;
       }
 
       &::after {
         height: 88px;
         background-color: $cBlue;
-        transition: all .2s ease-out;
+        transition: all 0.2s ease-out;
       }
 
       & span {
         &::before {
           width: 88px;
           background-color: $cBlue;
-          transition: all .2s ease-out;
+          transition: all 0.2s ease-out;
         }
 
         &::after {
           height: 88px;
           background-color: $cBlue;
-          transition: all .2s ease-out;
+          transition: all 0.2s ease-out;
         }
       }
     }
   }
 }
 
-//.p-footer 
+//.p-footer
 .p-footer {
   padding: 40px 0;
-  border-top: 1px solid #EDEDED;
+  border-top: 1px solid #ededed;
 
   &__logo {
     text-align: center;
@@ -746,7 +740,6 @@ body.hidden {
 
     & .address {
       margin-bottom: 10px;
-
     }
 
     & a {
@@ -761,7 +754,7 @@ body.hidden {
   }
 }
 
-//* * * * * * 事務所概要 * * * * * * * 
+//* * * * * * 事務所概要 * * * * * * *
 .c-company {
   .c-policy {
     padding: 20px 0;
@@ -810,10 +803,10 @@ body.hidden {
       @extend .mb-md;
 
       & th {
-        background: #EDEDED;
+        background: #ededed;
         display: block;
         width: 100%;
-        border-bottom: 1px solid #DDDDDD;
+        border-bottom: 1px solid #dddddd;
 
         & span {
           position: relative;
@@ -859,7 +852,7 @@ body.hidden {
     &__map {
       & iframe {
         width: 100%;
-        height: 200px
+        height: 200px;
       }
     }
   }
@@ -874,10 +867,10 @@ body.hidden {
 
     &__desc {
       & th {
-        background: #EDEDED;
+        background: #ededed;
         display: block;
         width: 100%;
-        border-bottom: 1px solid #DDDDDD;
+        border-bottom: 1px solid #dddddd;
 
         & span {
           position: relative;
@@ -908,7 +901,7 @@ body.hidden {
   }
 }
 
-//* * * * * * 取扱業務 * * * * * * * 
+//* * * * * * 取扱業務 * * * * * * *
 .c-business {
   &-item {
     @extend .mb-md;
@@ -938,16 +931,16 @@ body.hidden {
   }
 }
 
-//* * * * * * 料金体系 * * * * * * * 
+//* * * * * * 料金体系 * * * * * * *
 .c-price {
   & table {
     @extend .mb-sm;
 
     & th {
-      background: #EDEDED;
+      background: #ededed;
       display: block;
       width: 100%;
-      border-bottom: 1px solid #DDDDDD;
+      border-bottom: 1px solid #dddddd;
 
       & span {
         position: relative;
@@ -967,13 +960,10 @@ body.hidden {
     & td {
       padding: 8px 16px;
     }
-
-
   }
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     & table {
-
       th,
       td {
         width: 50%;
@@ -987,7 +977,7 @@ body.hidden {
 
       td {
         width: 70%;
-        border: 1px solid #DDDDDD;
+        border: 1px solid #dddddd;
       }
     }
   }
@@ -1002,7 +992,7 @@ body.hidden {
       left: 0;
       bottom: 0;
       margin: auto;
-      content: '';
+      content: "";
       display: block;
       height: 12px;
       width: 12px;
@@ -1015,7 +1005,7 @@ body.hidden {
 
     &__tit {
       position: relative;
-      border-bottom: 1px solid #EDEDED;
+      border-bottom: 1px solid #ededed;
       padding-bottom: 10px;
       order: 1;
       @extend .mb-sm;
@@ -1033,16 +1023,14 @@ body.hidden {
   }
 }
 
-//* * * * * * 採用情報 * * * * * * * 
+//* * * * * * 採用情報 * * * * * * *
 .c-recruit {
-
   &__title {
     text-align: center;
     @extend .mb-md;
   }
 
   &__points {
-
     & li {
       @extend .mb-md;
     }
@@ -1112,13 +1100,12 @@ body.hidden {
     }
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     th {
       color: $cBlack;
       margin-bottom: 5px;
     }
   }
-
 
   .points-title {
     .c-txt-lg {
@@ -1128,7 +1115,7 @@ body.hidden {
   }
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
   padding: 0 0 10vw 0;
   letter-spacing: 3px;
@@ -1148,7 +1135,6 @@ body.hidden {
       margin-top: 2vw;
       color: $cBlack;
     }
-
   }
 
   &__date {
@@ -1182,7 +1168,7 @@ body.hidden {
       width: 40px;
       height: 40px;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -1198,7 +1184,7 @@ body.hidden {
         content: "";
         position: absolute;
         right: 0;
-        background-image: url(/images/common/arrow.png);
+        background-image: url(../images/common/arrow.png);
         background-position: right center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -1207,16 +1193,15 @@ body.hidden {
         height: 12px;
         margin-left: 8px;
       }
-
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 45px;
         height: 45px;
@@ -1227,7 +1212,7 @@ body.hidden {
       }
     }
 
-    @media (min-width:900px) {
+    @media (min-width: 900px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 55px;
         height: 55px;
@@ -1247,7 +1232,7 @@ body.hidden {
 
   &__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__title {
@@ -1262,9 +1247,8 @@ body.hidden {
   }
 }
 
-//* * * * * * news-single-page * * * * 
+//* * * * * * news-single-page * * * *
 .c-news-sl {
-
   & .c-container {
     padding: 0 5vw 0 5vw;
   }
@@ -1281,14 +1265,12 @@ body.hidden {
   &__link {
     margin: 0 0 10vw 0;
     text-align: right;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     & a {
       display: inline-block;
       padding-bottom: 5px;
       border-bottom: 1px solid rgb(114, 114, 114);
-      ;
-
       & span {
         color: $cBlack;
       }

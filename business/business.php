@@ -1,3 +1,7 @@
+<?php
+ /* Template Name: business
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -6,11 +10,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>取扱業務 | 士業テンプレート4</title>
-  <link rel="stylesheet" href="/styles/vendor/logo-animation.min.css">
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="/styles/vendor/swiper.min.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/logo-animation.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/swiper.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css">
 </head>
 
 <body>
@@ -90,7 +94,7 @@
     <main id="main-contents" class="c-business">
       <section class="c-topview">
         <div class="c-topview__img">
-          <img src="/images/top/top-image-2.jpeg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-image-2.jpeg" alt="">
         </div>
         <h2 class="c-title">
           <span class="en">Business information</span>
@@ -104,7 +108,7 @@
         </h2>
         <div class="c-business-item__wrap">
           <div class="c-business-item__img">
-            <img src="/images/service/service-1.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-1.jpg" alt="">
           </div>
           <div class="c-business-item__desc">
             <p class="c-txt-sm">不動産登記とはお客様の大切な財産である土地・建物に対して、所在・面積の他、所有者の住所・氏名等を公の登記簿に記載して、その権利をお守りすることです。
@@ -122,7 +126,7 @@
         </h2>
         <div class="c-business-item__wrap">
           <div class="c-business-item__img">
-            <img src="/images/service/service-2.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-2.jpg" alt="">
           </div>
           <div class="c-business-item__desc">
             <p class="c-txt-sm">
@@ -138,7 +142,7 @@
         </h2>
         <div class="c-business-item__wrap">
           <div class="c-business-item__img">
-            <img src="/images/service/service-3.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-3.jpg" alt="">
           </div>
           <div class="c-business-item__desc">
             <p class="c-txt-sm">相続が発生すると、様々な手続きが必要となります。弊所では、相続放棄の手続や遺産分割協議書の作成など、相続に係る手続をお受けしております。
@@ -153,7 +157,7 @@
         </h2>
         <div class="c-business-item__wrap">
           <div class="c-business-item__img">
-            <img src="/images/service/service-4.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-4.jpg" alt="">
           </div>
           <div class="c-business-item__desc">
             <p class="c-txt-sm">
@@ -169,7 +173,7 @@
         </h2>
         <div class="c-business-item__wrap">
           <div class="c-business-item__img">
-            <img src="/images/service/service-5.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-5.jpg" alt="">
           </div>
           <div class="c-business-item__desc">
             <p class="c-txt-sm">
@@ -186,7 +190,7 @@
         </h2>
         <div class="c-business-item__wrap">
           <div class="c-business-item__img">
-            <img src="/images/service/service-6.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-6.jpg" alt="">
           </div>
           <div class="c-business-item__desc">
             <p class="c-txt-sm">
@@ -202,7 +206,7 @@
         </h2>
         <div class="c-business-item__wrap">
           <div class="c-business-item__img">
-            <img src="/images/service/service-7.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-7.jpg" alt="">
           </div>
           <div class="c-business-item__desc">
             <p class="c-txt-sm">契約書の作成・公正証書の作成・内容証明の作成・その他相談業務や、各種変更届申請、また供託手続その他債権譲渡登記まで幅広く取り扱っています
@@ -217,7 +221,7 @@
         </h2>
         <div class="c-business-item__wrap">
           <div class="c-business-item__img">
-            <img src="/images/service/service-8.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-8.jpg" alt="">
           </div>
           <div class="c-business-item__desc">
             <p class="c-txt-sm">成年後見申立や裁判所への提出書類作成業務、その他法律相談や企業への出張研修など幅広くお取扱いしております。
@@ -239,7 +243,7 @@
             <a href="tel:050-3786-1317">Tel:050-3786-1317</a>
           </div>
           <div class="p-contact__form">
-            <a class="link-btn" href="/contact/contact.html">
+            <a class="link-btn" href=" <?php echo esc_url( home_url('/company')); ?>">
               <span class="c-txt-md">お問い合わせフォーム</span></a>
           </div>
         </div>
@@ -247,97 +251,17 @@
       <!-- /.p-contact -->
     </main>
     <!-- /#main-contents -->
-    <footer class="p-footer">
-      <div class="c-container">
-        <div class="p-footer__wrap">
-          <div class="p-footer__logo">
-            <img src="/images/common/riv-logo-pr2.png" alt="">
-          </div>
-          <div class="p-footer__nav">
-            <ul>
-              <li>
-                <a class="animsition-link" href="/"><span class="c-txt-sm">ホーム</span>
-                  <span class="c-txt-xs">Home</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/company/company.html"><span class="c-txt-sm">事務所案内</span>
-                  <span class="c-txt-xs">Office</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/business/business.html"><span class="c-txt-sm">取扱業務</span>
-                  <span class="c-txt-xs">business</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/price/price.html"><span class="c-txt-sm">料金体系</span>
-                  <span class="c-txt-xs">Price</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruit/recruit.html"><span class="c-txt-sm">採用情報</span>
-                  <span class="c-txt-xs">Recruit</span></a>
-              </li>
-              <li>
-                <a href="/news/news.html"><span class="animsition-link c-txt-sm">お知らせ</span>
-                  <span class="c-txt-xs">News</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="p-footer__address">
-            <div class="address">
-              <p class="c-txt-sm">住所</p>
-              <span class="c-txt-sm">〒812-0011<br>福岡県福岡市博多区3-27-25-9F</span>
-            </div>
-            <div class="info">
-              <a href="tel:050-3786-1317"><span class="c-txt-sm">Tel : 050-3786-1317</span></a>
-            </div>
-            <div class="info"><span class="c-txt-sm">営業時間 : 9:00~18:00</span>
-            </div>
-            <div class="info"><span class="c-txt-sm">定休日 : 土曜日・日曜・祝日</span>
-            </div>
-          </div>
-        </div>
-        <div class="copyright">&copy;2021 Riv建設</div>
-      </div>
-    </footer>
+    <?php get_template_part('includes/c-footer'); ?>      
     <!-- /.footer -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="animsition-link" href="/">ホーム</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/company/company.html">事務所案内</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/business/business.html">取扱業務</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/price/price.html">料金体系</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
-        </ul>
-        <div class="contact-btn">
-          <ul class="contact-btn-list">
-            <li class="contact-btn-item">
-              <a href="tel:05031599527">
-                <span class="tel">お問い合わせ</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a href="mailto:info@riv-round.com">
-                <span class="mail">お問い合わせ</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a href="https://www.instagram.com/?hl=ja" target="_blank">
-                <span class="insta">インスタグラム</span>
-              </a>
-            </li>
-        </div>
-        </ul>
-      </nav>
-    </div>
+    <?php get_template_part('includes/c-header'); ?>     
     <!-- /.mobile-menu -->
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="/scripts/libs/mobile-menu.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll.js"></script>
 </body>
 
 </html>
