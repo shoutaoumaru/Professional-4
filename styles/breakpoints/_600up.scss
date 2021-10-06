@@ -64,17 +64,31 @@
 
 //.p-services
 .p-services {
+
+  &__img {
+    & a {
+      width: 25%;
+    }
+  }
+
+  &__txt {
+    width: 40%;
+  }
+}
+
+//.p-price
+.p-price {
   &__wrap {
     display: flex;
     justify-content: space-between;
   }
 
   &__img {
-    width: 55%;
+    width: 48%;
   }
 
-  &__txt {
-    width: 40%;
+  &__text {
+    width: 48%;
   }
 }
 

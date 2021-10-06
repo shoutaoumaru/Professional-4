@@ -131,7 +131,7 @@ $breakpoints: ('md': 'screen and (min-width: 600px)',
   margin-bottom: 80px;
 
   @include mq(md) {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 
   @include mq(lr) {
