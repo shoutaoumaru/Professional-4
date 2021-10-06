@@ -357,10 +357,6 @@ body.hidden {
   .hero {
     position: relative;
 
-    .swiper-slide {
-      height: 80vh;
-    }
-
     &__text {
       position: absolute;
       bottom: -15%;
@@ -400,6 +396,10 @@ body.hidden {
     }
 
     @media (max-width:599px) {
+      .swiper-slide {
+        height: 80vh;
+      }
+
       .view-pc {
         display: none;
       }
@@ -509,7 +509,7 @@ body.hidden {
 .p-recruit {
   position: relative;
   // text-align: center;
-  @extend .mb-md;
+  @extend .mb-lr;
 
   & .p-title {
     .en {

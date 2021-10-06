@@ -161,34 +161,34 @@
   }
 }
 
-.mb-md, .p-title, .c-title, .p-recruit, .p-news, .c-company .c-policy, .c-company .c-message, .c-company .c-about, .c-company .c-about__desc, .c-company .c-access, .c-company .c-history, .c-business-item, .c-price__item, .c-recruit__title, .c-recruit__points li, .c-recruit .recruit-message, .c-recruit .recruit-detaiil, .mobile-menu__item {
+.mb-md, .p-title, .c-title, .p-news, .c-company .c-policy, .c-company .c-message, .c-company .c-about, .c-company .c-about__desc, .c-company .c-access, .c-company .c-history, .c-business-item, .c-price__item, .c-recruit__title, .c-recruit__points li, .c-recruit .recruit-message, .c-recruit .recruit-detaiil, .mobile-menu__item {
   margin-bottom: 50px;
 }
 
 @media screen and (min-width: 600px) {
-  .mb-md, .p-title, .c-title, .p-recruit, .p-news, .c-company .c-policy, .c-company .c-message, .c-company .c-about, .c-company .c-about__desc, .c-company .c-access, .c-company .c-history, .c-business-item, .c-price__item, .c-recruit__title, .c-recruit__points li, .c-recruit .recruit-message, .c-recruit .recruit-detaiil, .mobile-menu__item {
+  .mb-md, .p-title, .c-title, .p-news, .c-company .c-policy, .c-company .c-message, .c-company .c-about, .c-company .c-about__desc, .c-company .c-access, .c-company .c-history, .c-business-item, .c-price__item, .c-recruit__title, .c-recruit__points li, .c-recruit .recruit-message, .c-recruit .recruit-detaiil, .mobile-menu__item {
     margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .mb-md, .p-title, .c-title, .p-recruit, .p-news, .c-company .c-policy, .c-company .c-message, .c-company .c-about, .c-company .c-about__desc, .c-company .c-access, .c-company .c-history, .c-business-item, .c-price__item, .c-recruit__title, .c-recruit__points li, .c-recruit .recruit-message, .c-recruit .recruit-detaiil, .mobile-menu__item {
+  .mb-md, .p-title, .c-title, .p-news, .c-company .c-policy, .c-company .c-message, .c-company .c-about, .c-company .c-about__desc, .c-company .c-access, .c-company .c-history, .c-business-item, .c-price__item, .c-recruit__title, .c-recruit__points li, .c-recruit .recruit-message, .c-recruit .recruit-detaiil, .mobile-menu__item {
     margin-bottom: 100px;
   }
 }
 
-.mb-lr, .p-about, .p-services, .p-price {
+.mb-lr, .p-about, .p-services, .p-price, .p-recruit {
   margin-bottom: 80px;
 }
 
 @media screen and (min-width: 600px) {
-  .mb-lr, .p-about, .p-services, .p-price {
-    margin-bottom: 100px;
+  .mb-lr, .p-about, .p-services, .p-price, .p-recruit {
+    margin-bottom: 120px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .mb-lr, .p-about, .p-services, .p-price {
+  .mb-lr, .p-about, .p-services, .p-price, .p-recruit {
     margin-bottom: 200px;
   }
 }
@@ -665,10 +665,6 @@ body.hidden {
   position: relative;
 }
 
-.top-view .hero .swiper-slide {
-  height: 80vh;
-}
-
 .top-view .hero__text {
   position: absolute;
   bottom: -15%;
@@ -708,6 +704,9 @@ body.hidden {
 }
 
 @media (max-width: 599px) {
+  .top-view .hero .swiper-slide {
+    height: 80vh;
+  }
   .top-view .hero .view-pc {
     display: none;
   }
@@ -3552,7 +3551,13 @@ body.lb-disable-scrolling {
   .p-about__img {
     width: 55%;
   }
-  .p-services__wrap {
+  .p-services__img a {
+    width: 25%;
+  }
+  .p-services__txt {
+    width: 40%;
+  }
+  .p-price__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3560,11 +3565,11 @@ body.lb-disable-scrolling {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .p-services__img {
-    width: 55%;
+  .p-price__img {
+    width: 48%;
   }
-  .p-services__txt {
-    width: 40%;
+  .p-price__text {
+    width: 48%;
   }
   .p-recruit .c-container, .p-recruit .c-business-item__desc {
     margin-left: 10%;
