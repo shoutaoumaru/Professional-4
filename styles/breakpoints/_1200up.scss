@@ -11,13 +11,9 @@
 
 .top-view {
   .hero {
-    &__text {
-      left: 12%;
+    .swiper-slide {
+      height: 80vh;
     }
-  }
-
-  .swiper-container {
-    height: 85vh;
   }
 }
 
