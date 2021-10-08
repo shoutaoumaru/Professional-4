@@ -13,7 +13,7 @@
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class=" logo__img">
-          <a href=" <?php echo esc_url( home_url('/')); ?>">
+          <a href="/">
             <div class="logo"></div>
           </a>
         </div>
@@ -28,29 +28,30 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class=" logo__img">
-          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
+          <a class="animsition-link" href="/">
             <div class="logo-pc logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>"><span>会社案内</span>
-                <small>Company</small></a>
+              <a class="pc-nav-link animsition-link" href="/company/company.html"><span>事務所案内</span>
+                <small>Office</small></a>
             </li>
             <li class="pc-nav-item">
               <a class="pc-nav-link animsition-link"
-                href=" <?php echo esc_url( home_url('/business')); ?>"><span>事業案内</span><small>business</small></a>
+                href="/business/business.html"><span>取扱業務</span><small>business</small></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/works')); ?>"><span>実績紹介</span><small>Works</small></a>
+              <a class="pc-nav-link animsition-link" href="/works/works.html"><span>料金体系
+                </span><small>Price</small></a>
             </li>
             <li class="pc-nav-item">
               <a class="pc-nav-link animsition-link"
-                href=" <?php echo esc_url( home_url('/recruit')); ?>"><span>採用情報</span><small>Recruit</small></a>
+                href="/recruit/recruit.html"><span>採用情報</span><small>Recruit</small></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span><small>News</small></a>
+              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span><small>News</small></a>
             </li>
           </ul>
         </nav>
