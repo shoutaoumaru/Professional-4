@@ -161,7 +161,7 @@
             </div>
           </div>
           <div class="hero__text">
-            <h2>３０年の歴史は<br>お客様との<br>信頼の証</h2>
+            <h2>３０年の歴史は<br>お客様との信頼の証</h2>
           </div>
           <div class="scrolldown">
             <span>scroll</span>
