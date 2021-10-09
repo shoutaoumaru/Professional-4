@@ -81,4 +81,5 @@
         </ul>
       </nav>
     </div>
+    <?php wp_footer(); ?>
     
