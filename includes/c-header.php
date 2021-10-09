@@ -1,31 +1,67 @@
-<div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>">事務所案内</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href=" <?php echo esc_url( home_url('/business')); ?>">取扱業務</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href=" <?php echo esc_url( home_url('/price')); ?>">料金体系</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a></li>
-        </ul>
-        <div class="contact-btn">
-          <ul class="contact-btn-list">
-            <li class="contact-btn-item">
-              <a href="tel:05031599527">
-                <span class="tel">お問い合わせ</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a href="mailto:info@riv-round.com">
-                <span class="mail">お問い合わせ</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a href="https://www.instagram.com/?hl=ja" target="_blank">
-                <span class="insta">インスタグラム</span>
-              </a>
-            </li>
+    <header id="header" class="p-header">
+      <div class="mobile-container">
+        <div class=" logo__img">
+          <a href=" <?php echo esc_url( home_url('/')); ?>">
+            <div class="logo"></div>
+          </a>
         </div>
-        </ul>
-      </nav>
-    </div>
+        <div class="mobile-button">
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <!-- /.mobile-container -->
+      <div class="pc-container">
+        <div class=" logo__img">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
+            <div class="logo-pc logo"></div>
+          </a>
+        </div>
+        <nav class="pc-nav">
+          <ul class="pc-nav-list">
+            <li class="pc-nav-item">
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>"><span>事務所案内</span>
+                <small>Office</small></a>
+            </li>
+            <li class="pc-nav-item">
+              <a class="pc-nav-link animsition-link"
+                href=" <?php echo esc_url( home_url('/business')); ?>"><span>取扱業務</span><small>business</small></a>
+            </li>
+            <li class="pc-nav-item">
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/price')); ?>"><span>料金体系
+                </span><small>Price</small></a>
+            </li>
+            <li class="pc-nav-item">
+              <a class="pc-nav-link animsition-link"
+                href=" <?php echo esc_url( home_url('/')); ?>"><span>採用情報</span><small>Recruit</small></a>
+            </li>
+            <li class="pc-nav-item">
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span><small>News</small></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.pc-container -->
+      <!-- <div class="reserve-btn-js">
+        <div class="reserve-btn-js__inner">
+          <div class="reserve-btn-js__01">
+            <span>お</span>
+            <span>問</span>
+            <span>合</span>
+            <span>せ</span>
+          </div>
+          <div class="reserve-btn-js__02 js-left">
+            <div class="tel">
+              <a href="tel:092-686-7954">電話で<br>お問い合わせ</a>
+            </div>
+            <div class="net">
+              <a href="#">フォームで<br>お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- /.reserve-btn -->
+    </header>

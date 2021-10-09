@@ -10,11 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>取扱業務 | 士業テンプレート4</title>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/logo-animation.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/swiper.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css">
+  <?php get_header(); ?>
 </head>
 
 <body>
@@ -23,73 +19,7 @@
       <span class="txt">Riv<br>Construction</span>
     </div>
     <!-- /.pageBg -->
-    <header id="header" class="p-header">
-      <div class="mobile-container">
-        <div class=" logo__img">
-          <a href="/">
-            <div class="logo"></div>
-          </a>
-        </div>
-        <div class="mobile-button">
-          <button class="mobile-menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-      <!-- /.mobile-container -->
-      <div class="pc-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href="/">
-            <div class="logo-pc logo"></div>
-          </a>
-        </div>
-        <nav class="pc-nav">
-          <ul class="pc-nav-list">
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/company/company.html"><span>事務所案内</span>
-                <small>Office</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link"
-                href="/business/business.html"><span>取扱業務</span><small>business</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/works/works.html"><span>料金体系
-                </span><small>Price</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link"
-                href="/recruit/recruit.html"><span>採用情報</span><small>Recruit</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span><small>News</small></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- /.pc-container -->
-      <!-- <div class="reserve-btn-js">
-        <div class="reserve-btn-js__inner">
-          <div class="reserve-btn-js__01">
-            <span>お</span>
-            <span>問</span>
-            <span>合</span>
-            <span>せ</span>
-          </div>
-          <div class="reserve-btn-js__02 js-left">
-            <div class="tel">
-              <a href="tel:092-686-7954">電話で<br>お問い合わせ</a>
-            </div>
-            <div class="net">
-              <a href="#">フォームで<br>お問い合わせ</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- /.reserve-btn -->
-    </header>
+    <?php get_template_part('includes/c-header'); ?>      
     <!-- /.header -->
     <main id="main-contents" class="c-business">
       <section class="c-topview">
@@ -250,10 +180,9 @@
       </section>
       <!-- /.p-contact -->
     </main>
-    <!-- /#main-contents -->
-    <?php get_template_part('includes/c-footer'); ?>      
+    <!-- /#main-contents -->    
     <!-- /.footer -->
-    <?php get_template_part('includes/c-header'); ?>     
+    <?php get_footer(); ?>
     <!-- /.mobile-menu -->
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
