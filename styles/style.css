@@ -488,7 +488,6 @@ body.hidden {
 .p-title .en {
   position: relative;
   font-size: 34px;
-  padding-right: 60px;
 }
 
 .p-title .ja {
@@ -496,7 +495,20 @@ body.hidden {
   top: -0.3rem;
   font-size: 14px;
   color: #586166;
-  padding-left: 8px;
+  padding-left: 50px;
+}
+
+.p-title .ja::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 40px;
+  background-color: #9b9b9b;
 }
 
 .c-title {
@@ -652,7 +664,7 @@ body.hidden {
 }
 
 .top-view .hero__text h2 {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -3355,8 +3367,7 @@ body.lb-disable-scrolling {
 
 @media (min-width: 960px) {
   .p-title .en {
-    font-size: 50px;
-    padding-right: 140px;
+    font-size: 46px;
   }
   .p-title .en::before {
     height: 40px;
@@ -3367,12 +3378,16 @@ body.lb-disable-scrolling {
   }
   .p-title .ja {
     font-size: 26px;
+    padding-left: 100px;
+  }
+  .p-title .ja::before {
+    width: 80px;
   }
   .top-view {
     margin-top: 85px;
   }
   .top-view .hero__text h2 {
-    font-size: 58px;
+    font-size: 36px;
   }
   .top-view .hero__text::after {
     left: 236px;
